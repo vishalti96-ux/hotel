@@ -1,0 +1,131 @@
+<style>
+    body{
+        background-color: #fdd6e9;
+    }
+    .btn{
+        /* border: 2px solid black; */
+        color: rgba(8, 8, 8, 0.925);
+        cursor: pointer;
+        font-size: 25px;
+        display: inline-block;
+        margin: 0 2%;
+        padding: 1%;
+        text-align: center;
+     
+    }
+    h1{
+            font-size:300% ;
+            font-family:HARRINGTON;
+            text-align: center;
+        }
+        a:active{
+        background-color: black;
+        color: black;
+    }
+    a:hover{
+        background-color: #c898ea;
+        color: white;
+    }
+       .nav{
+             /* border: 2px solid; */
+             text-align: center;
+             margin-top: 1px;
+}
+.active{
+        /* border: 2px solid red; */
+        background-color: indigo;
+        color: white;
+    }
+
+.form_container{
+    border: 2px solid rgb(8, 7, 7);
+    width: 40%;
+    height: 400px;
+    padding: 30px;
+    font-size: 25px;
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+
+}
+.form_container h2{
+    text-align: center;
+}
+.form_container input{
+    width: 100%;
+    padding: 5px;
+}
+.form_container textarea{
+    width: 100%;
+    margin: 5px;
+}
+button{
+    width: 30%;
+    margin: auto;
+}
+</style>
+<body>
+    <div class="back">
+        </div>
+        <h1>RUHI'S COUCH </h1>
+    
+    <div class="nav" >
+    <b><a href="/html/HOTEL1.HTML" class="btn">HOME</a></b>
+    <b><a href="/html/ABOUT.HTML" class="btn">ABOUT</a></b>
+    <b><a href="/html/menu.html" class="btn">MENU</a></b>
+    <b><a href="/html/contact.html" class="btn active">CONTACT</a></b>
+    <b><a href="/html/ACCOMMODATION.html" class="btn">ACCOMMODATION</a></b>
+        <b><a href="/html/serevices.html" class="btn">SERVICES</a></b>
+    </div>
+
+
+</header>
+<br><br>
+<section id="contact-info" class="bg-dark">
+    <div class="container">
+       <div class="box ">
+           <i class="fas fa-hotel fa-3x"></i>
+              <h2> Location</h2>
+              <p>Yamunapuram, Bulandshahr, 
+               UttarPradesh 203001</p>
+          </div>
+          <div class="box">
+           <i class="fas fa-phone fa-3x"></i>
+           <h2>Telephone Number</h2>
+           <p>+919876543210 / +917865432901</p>
+          </div>
+          <div class="box ">
+           <i class="fas fa-envelope fa-3x"></i>
+           <h2>Email Address</h2>
+           <p>yukti'scouch123@gmail.com</p>
+          </div>
+    </div>
+
+</section>
+<section id="contact-form" class="py-3">
+    <div class="form_container">
+
+
+        <h3>CONTACT US </h3>
+        <form action="process.php">
+            <div class="form-group">
+               <laber for="name">Name:</laber><br>
+               <input type="text" name="Name" id="Name">
+            </div>
+            
+            <div class="form-group"><br>
+               <laber for="email">Email:</laber><br>
+               <input type="email" name="email" id="email">
+            </div>
+            <div class="form-group">
+               <laber for="message">Message:</laber><br>
+               <textarea type="email" name="message" id="message"></textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+     </div>
+ </section>
+ 
+
+</body>
+</html>

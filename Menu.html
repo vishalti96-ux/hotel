@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title> </title>
+        <style>
+            body{
+                background-image: url(/images/ku.jpg);
+            }
+.bfd{
+    display:none;
+}
+.abc{
+    display:none;
+}
+.def{
+    display:none;
+}
+.ghi{
+    display:none;
+}
+.xyz{
+    display:none;
+}
+.btn{
+    padding: 5px;
+    margin: 10px;
+    font-size: 30px;
+    display: inline;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    box-shadow: 2px 3px 3px rgb(207, 205, 205);
+    cursor: pointer;
+}
+.menuimg{
+    width: 100%;
+    height: 100%;
+    
+}
+.mydiv{
+    width: 50%;
+    height: 500px;
+    margin: auto;
+    padding: 5px;
+    margin-top: 2px;
+}         
+        </style>
+    </head>
+    <body>
+        <div class="nav" >
+            <button class="btn" onclick="fun()">BREAKFAST</button>
+            <button class="btn" onclick="fun1()">LUNCH</button>
+            <button class="btn" onclick="fun2()">DINNER</button>
+            <button class="btn" onclick="fun3()">DESSERT</button>
+            <button class="btn" onclick="fun4()">DRINKS</button>
+            
+            </div>
+
+            <div class="bfd mydiv" id="ibfd">
+                <img class="menuimg" src="/images/menu/3.jpg" alt="">
+            </div>
+            <div class="abc mydiv" id="iabc">
+               <img class="menuimg" src="/images/menu/1.jpg" alt="">
+            </div>
+            <div class="def mydiv" id="idef">
+                <img class="menuimg" src="/images/menu/2.jpeg" alt="">
+            </div>
+            <div class="ghi mydiv" id="ighi">
+                <img class="menuimg" src="/images/menu/4.jpg" alt="">
+            </div>
+            <div class="xyz mydiv" id="ixyz">
+                <img  class="menuimg"src="/images/menu/6.jpeg" alt="">
+            </div>
+       
+    <script>
+       function fun(){
+            document.getElementById("ibfd").style.display="block";
+            document.getElementById("iabc").style.display="none";
+            document.getElementById("idef").style.display="none";
+            document.getElementById("ighi").style.display="none";
+            document.getElementById("ixyz").style.display="none";
+       }
+       function fun1(){
+        document.getElementById("ibfd").style.display="none";
+            document.getElementById("iabc").style.display="block";
+            document.getElementById("idef").style.display="none";
+            document.getElementById("ighi").style.display="none";
+            document.getElementById("ixyz").style.display="none";
+       }
+       function fun2(){
+        document.getElementById("ibfd").style.display="none";
+            document.getElementById("iabc").style.display="none";
+            document.getElementById("idef").style.display="block";
+            document.getElementById("ighi").style.display="none";
+            document.getElementById("ixyz").style.display="none";
+       }
+       function fun3(){
+        document.getElementById("ibfd").style.display="none";
+            document.getElementById("iabc").style.display="none";
+            document.getElementById("idef").style.display="none";
+            document.getElementById("ighi").style.display="block";
+            document.getElementById("ixyz").style.display="none";
+       }
+       function fun4(){
+        document.getElementById("ibfd").style.display="none";
+            document.getElementById("iabc").style.display="none";
+            document.getElementById("idef").style.display="none";
+            document.getElementById("ighi").style.display="none";
+            document.getElementById("ixyz").style.display="block";
+       }
+    </script>        
+    </body>
+    
+</html>
+
+
